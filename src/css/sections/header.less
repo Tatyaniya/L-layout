@@ -1,0 +1,111 @@
+.header {
+    background: url('../img/first-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 6px;
+}
+
+.menu {
+    width: 427px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+
+    &__link {
+        color: @w;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            border-bottom: 1px solid rgba( 255, 255, 255, 0.43);
+        }
+    }
+}
+
+.phones {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    padding-top: 8px;
+    margin-right: 20px;
+
+    &__icon {
+        margin-right: 6px;
+    }
+
+    &__link {
+        color: @w;
+        font-weight: 700;
+    }
+}
+
+.call-btn {
+    width: 174px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid @w;
+    text-align: center;
+    &__link {
+        color: @w;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+}
+
+.offer {
+    padding-top: 295px;
+    padding-bottom: 317px;
+
+    &__title {
+        color: @w;
+        font-size: 60px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-left: 46%;
+        margin-bottom: 35px;
+    }
+
+    &__subtitle {
+        width: 400px;
+        color: @w; 
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 53%;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        margin-left: 62%;
+    }
+
+    &__link {
+        width: 341px;
+        height: 60px;
+        color: @b;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 59px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: 1px solid @w;
+        background-color: @w;
+        box-shadow: 0px 5px 5px 0px rgba(0, 1, 1, 0.45);
+        &:hover {
+            color: @w;
+            background-color: transparent;
+        }
+    }
+}

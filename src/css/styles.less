@@ -9,6 +9,11 @@
 }
 */
 
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .container{
 	.wrapper();
 }
@@ -21,7 +26,32 @@ body {
     background: #fff;
 }
 
+a {
+	display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
 
-//@import "sections/.less";
-//@import "sections/.less";
-//@import "sections/.less";
+.title-2 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+@import "sections/header.less";
+@import "sections/services.less";
+@import "sections/about.less";
+@import "sections/why.less";
+@import "sections/weare.less";
+@import "sections/consultation.less";
+@import "sections/footer.less";
+@import "sections/header-inner.less";
+@import "sections/about.less";
+@import "sections/about.less";
+@import "sections/about.less";
