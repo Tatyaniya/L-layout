@@ -6,7 +6,7 @@
 @break_xs: 576px;
 @break_xxs: 400px;
 
-@offset: 10px;
+@offset: 30px;
 @offset_md: @offset;
 @offset_sm: @offset;
 @offset_xs: @offset;
@@ -18,8 +18,9 @@
 @offset_xs_one_side: (@offset_xs / 2);
 @offset_xxs_one_side: (@offset_xxs / 2);
 
-@fields: 30px;
+@fields: 15px;
 @fields_md: 20px;
+@fields_sm: 15px;
 
 .wrapper-full(){
     padding-left: @fields;
@@ -28,6 +29,11 @@
     .md-block({
         padding-left: @fields_md;
         padding-right: @fields_md;
+    });
+
+    .sm-block({
+        padding-left: @fields_sm;
+        padding-right: @fields_sm;
     });
 }
 

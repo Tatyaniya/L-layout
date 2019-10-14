@@ -1,9 +1,9 @@
 module.exports = {
 	columns: 12,
-	offset: "10px",
+	offset: "30px",
 	container: {
 		maxWidth: "1200px",
-		fields: "30px"
+		fields: "15px"
 	},
 	breakPoints: {
 		md: {
@@ -11,7 +11,8 @@ module.exports = {
 			fields: "20px"
 		},
 	   sm: {
-	      width: "764px"
+          width: "764px",
+          fields: "15px"
 	   },
 	   xs: {
 	      width: "576px"

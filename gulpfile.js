@@ -46,6 +46,11 @@ function images(){
 				.pipe(gulp.dest('./build/img'));
 }
 
+function fonts() {
+    return gulp.src('./src/fonts/**/*')
+        .pipe(gulp.dest('./build/fonts'));
+}
+
 function watch(){
 	if(isSync){
 		browserSync.init({
@@ -67,7 +72,7 @@ function grid(done){
 	done();
 }
 
-let build = gulp.parallel(html, styles, images);
+let build = gulp.parallel(html, styles, images, fonts);
 let buildWithClean = gulp.series(clean, build);
 let dev = gulp.series(buildWithClean, watch);
 

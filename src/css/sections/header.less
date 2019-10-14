@@ -22,11 +22,15 @@
         line-height: 18px;
         font-weight: 500;
         text-transform: uppercase;
-        padding-bottom: 2px;
-        border-bottom: 1px solid transparent;
+        padding-bottom: 4px;
+        &:extend(.link-hover);
 
-        &:hover {
-            border-bottom: 1px solid rgba( 255, 255, 255, 0.43);
+        &:after {
+            &:extend(.link-hover-after);
+        }
+
+        &:hover::after {
+            &:extend(.link-hover-width);
         }
     }
 }
@@ -48,19 +52,35 @@
     &__link {
         color: @w;
         font-weight: 700;
+        padding-bottom: 6px;
+        &:extend(.link-hover); 
+
+        &:after {
+            &:extend(.link-hover-after);
+        }
+
+        &:hover::after {
+            &:extend(.link-hover-width);
+        }
     }
 }
 
 .call-btn {
     width: 174px;
     height: 40px;
-    line-height: 38px;
     border: 1px solid @w;
     text-align: center;
     &__link {
+        width: 100%;
+        height: 100%;
         color: @w;
         font-size: 11px;
+        line-height: 38px;
         text-transform: uppercase;
+        &:hover {
+            color: @b;
+            background-color: @w;
+        }
     }
 }
 
