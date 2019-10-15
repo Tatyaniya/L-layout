@@ -1,0 +1,67 @@
+.consultation {
+    &__title {
+        &:extend(.title-2);
+    }
+
+    &__content {
+        &:extend(.sg-row);
+    }
+
+    &__contacts {
+        &:extend(.sg-col);
+        .size(7);
+        padding-right: 22px;
+    }
+
+    &__form {
+        &:extend(.sg-col);
+        .size(5);
+    }
+
+    &__data {
+        &:extend(.sg-row);
+    }
+
+    &__item {
+        &:extend(.sg-col);
+        .size(3.7);
+
+        &:last-child {
+            .size(4.6); 
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+
+    &__icon {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    &__text {
+        padding-top: 5px;
+    }
+
+    &__link,
+    &__addr {
+        color: @b;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0;
+        margin-bottom: 17px;
+    }
+
+    &__img {
+        box-shadow: 0 0 29px rgba(0, 0, 0, 0.13);
+    }
+}
