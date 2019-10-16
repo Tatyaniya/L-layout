@@ -1,0 +1,62 @@
+.form {
+    padding: 70px 70px 57px;
+
+    &__title {
+        &:extend(.title-3);
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 39px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 57px;
+        border: none;
+        border-radius: 1px;
+        box-shadow:  0px 3px 5px 0px rgba(0, 1, 1, 0.15);
+        margin-bottom: 6px;
+        padding-left: 32px;
+    }
+
+    &__submit {
+        width: 100%;
+        height: 60px;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: uppercase;
+        text-align: center;
+        color: @w;
+        background-color: @b;
+        border: 2px solid @b;
+        margin-bottom: 38px;
+        border-radius: 1px;
+        box-shadow: 0px 3px 5px 0px rgba(0, 1, 1, 0.15);
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: @b;
+            background-color: @w;
+        }
+    }
+
+    &__protected {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 14px;
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    &__data {
+        font-size: 11px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.61);
+    }
+}
