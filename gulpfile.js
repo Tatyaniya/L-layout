@@ -58,6 +58,11 @@ function fonts() {
         .pipe(gulp.dest('./build/fonts'));
 }
 
+function scripts(){
+	return gulp.src('./src/js/**/*')
+				.pipe(gulp.dest('./build/js'));
+}
+
 function watch(){
 	if(isSync){
 		browserSync.init({
@@ -70,6 +75,7 @@ function watch(){
 	gulp.watch('./src/css/**/*.less', styles);
     gulp.watch('./src/**/*.html', html);
     gulp.watch('./src/**/*.txt', txt);
+    gulp.watch('./src/**/*.js', scripts);
 	gulp.watch('./smartgrid.js', grid);
 }
 
@@ -80,7 +86,7 @@ function grid(done){
 	done();
 }
 
-let build = gulp.parallel(html, styles, images, fonts, txt);
+let build = gulp.parallel(html, styles, images, fonts, scripts, txt);
 let buildWithClean = gulp.series(clean, build);
 let dev = gulp.series(buildWithClean, watch);
 

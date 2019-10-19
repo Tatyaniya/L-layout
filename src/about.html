@@ -1,11 +1,23 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
     <title>Law Firm</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- meta -->
+    <meta name="description" content="Law Firm">
+    <meta name="keywords" content="write here search keywords">
+    <meta property="og:title" content="Law Firm">
+	<meta property="og:description" content="write a description here">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="add image path here" >
+    <meta property="og:site_name" content="Law Firm">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -38,8 +50,352 @@
 				<div></div>
 			</div>
 		</div>
-    </div> 
+    </div>
+
+    <!-- header -->
+    <header class="header-inner">
+        <div class="container header__container">
+            <div class="navigation">
+                <div class="logo navigation__logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <nav class="nav navigation__nav">
+                    <ul class="menu navigation__menu">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">About company</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="services.html" class="menu__link">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html" class="menu__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="phones navigation__phones">
+                    <div class="phone">
+                        <div class="phone__icon">
+                            <img src="img/phone.png" alt="phone">
+                        </div>
+                        <a href="tel:+9 789 698 46 78" class="phone__link">
+                            +9 789 698 46 78
+                        </a>
+                    </div>
+                    <div class="call-btn">
+                        <a href="javascript:void(0)" class="call-btn__link">
+                            Request a call
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutOffer">
+                <div class="container aboutOffer__container">
+                    <div class="aboutOffer__left">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link">
+                                    home
+                                </a>
+                                <div class="breadcrumbs__icon">
+                                    <img src="img/breadcrumbs-arrow.png" alt="arrow">
+                                </div>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">
+                                    about company
+                                </a>
+                            </li>
+                        </ul>
+                        <h1 class="aboutOffer__title">
+                            About Best Lawyer
+                        </h1>
+                    </div>
+                    <div class="aboutOffer__right">
+                        <h3 class="aboutOffer__subtitle">
+                            why choose us
+                        </h3>
+                        <ul class="aboutOffer__list">
+                            <li class="aboutOffer__item">
+                                <div class="aboutOffer__icon">
+                                    <img src="img/student.png" alt="student">
+                                </div>
+                                <div class="aboutOffer__text">
+                                    extensive practice
+                                </div>
+                            </li>
+                            <li class="aboutOffer__item">
+                                <div class="aboutOffer__icon">
+                                    <img src="img/computer-user.png" alt="computer user">
+                                </div>
+                                <div class="aboutOffer__text">
+                                    free consultation
+                                </div>
+                            </li>
+                            <li class="aboutOffer__item">
+                                <div class="aboutOffer__icon">
+                                    <img src="img/handshake.png" alt="handshake">
+                                </div>
+                                <div class="aboutOffer__text">
+                                    always in touch with the client
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="aboutCompany">
+        <div class="container aboutCompany__container">
+            <div class="aboutCompany__left">
+                <h2 class="aboutCompany__title">
+                    about our company
+                </h2>
+                <div class="aboutCompany__desc">
+                    <p class="aboutCompany__text">
+                        We specialize in collecting penalties from the Developer and supporting transactions with various real estate. Payment after legal services, without prepayment.
+                    </p>
+                    <p class="aboutCompany__text">
+                        First, you get money from the debtor, and only then with that money you pay for our services.<br>   
+                        From 2002 to 2014, we acted under the BEST LAWYER brand and were registered in the form of organization of a legal entity as LLC.
+                    </p>
+                    <p class="aboutCompany__text">
+                        Recently, very unscrupulous one-day companies have begun to appear that have begun to defile our brand using similar names.
+                    </p>
+                </div>
+                <div class="aboutCompany__btn">
+                    <a href="#" class="aboutCompany__link">
+                        <div class="aboutCompany__more">
+                            Read more
+                        </div>
+                        <div class="aboutCompany__icon">
+                            <img src="img/arrow-about.png" alt="arrow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="aboutCompany__right">
+                <h2 class="aboutCompany__title">
+                    what do we help with
+                </h2>
+                <div class="aboutCompany__subtitle">
+                    You can contact us for any question
+                </div>
+                <ul class="help">
+                    <li class="help__item">
+                        <p class="help__text">
+                            Legal services related to real estate
+                        </p>
+                        <p class="help__text">
+                            Recovery of penalty from the developer
+                        </p>
+                        <p class="help__text">
+                            Legal support of real estate transactions
+                        </p>
+                        <p class="help__text">
+                            Checking developers for solvency
+                        </p>
+                        <p class="help__text">
+                            Acceptance of apartments in a new building
+                        </p>
+                        <p class="help__text">
+                            Payment system setup
+                        </p>
+                        <p class="help__text">
+                            Registration of ownership of the apartment
+                            in a new building, including in court
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- consultation -->
+    <section class="consultation">
+        <div class="container consultation__container">
+            <h2 class="consultation__title">
+                request a consultation
+            </h2>
+            <div class="consultation__content">
+                <div class="consultation__contacts">
+                    <div class="consultation__data">
+                        <div class="consultation__item">
+                            <h4 class="consultation__subtitle">
+                                <div class="consultation__icon">
+                                    <img src="img/cons-phone.png" alt="phone">
+                                </div>
+                                <div class="consultation__text">
+                                    call
+                                </div>
+                            </h4>
+                            <div class="consultation__desc">
+                                <div class="consultation__phone">
+                                    <a href="tel:8 (707) 145 04 55" class="consultation__link">
+                                        8 (707) 145 04 55
+                                    </a>
+                                </div>
+                                <div class="consultation__phone">
+                                    <a href="tel:8 (777) 265 88 95" class="consultation__link">
+                                        8 (777) 265 88 95
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="consultation__item">
+                            <h4 class="consultation__subtitle">
+                                <div class="consultation__icon">
+                                    <img src="img/letter.png" alt="letter">
+                                </div>
+                                <div class="consultation__text">
+                                    write
+                                </div>
+                            </h4>
+                            <div class="consultation__desc">
+                                <div class="consultation__mail">
+                                    <a href="mailto:Adelis@gmail.ru" class="consultation__link">
+                                        Adelis@gmail.ru
+                                    </a>
+                                </div>
+                                <div class="consultation__mail">
+                                    <a href="Sistema@gmail.ru" class="consultation__link">
+                                        Sistema@gmail.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="consultation__item">
+                            <h4 class="consultation__subtitle">
+                                <div class="consultation__icon">
+                                    <img src="img/briefcase.png" alt="briefcase">
+                                </div>
+                                <div class="consultation__text">
+                                    come
+                                </div>
+                            </h4>
+                            <div class="consultation__desc">
+                                <address class="consultation__address">
+                                    <div class="consultation__addr">
+                                        Russia, Moscow
+                                    </div>
+                                    <div class="consultation__addr">
+                                        Volokolamsk highway, 56
+                                    </div>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultation__img">
+                        <img src="img/cons-about-img.jpg" alt="photo">
+                    </div>
+                </div>
+                <div class="consultation__form">
+                    <form action="#" class="form">
+                        <h3 class="form__title">
+                            Fill the form
+                        </h3>
+                        <div class="form__text">
+                            To get a free consultation<br> for your questions
+                        </div>
+                        <input type="text" name="name" class="form__input" placeholder="Enter your name">
+                        <input type="text" name="Email" class="form__input" placeholder="Enter Email">
+                        <input type="text" name="phone" class="form__input" placeholder="Enter phone">
+                        <button type="submit" class="form__submit">request a consultation</button>
+                        <div class="form__protected">
+                            <div class="form__icon">
+                                <img src="img/form-lock.png" alt="lock">
+                            </div>
+                            <div class="form__data">
+                                Your data is protected
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__row">
+                <div class="logo footer__logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <nav class="nav footer__nav">
+                    <ul class="menu footer__menu">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">About company</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="services.html" class="menu__link">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html" class="menu__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="phones footer__phones">
+                    <div class="phone">
+                        <div class="phone__icon">
+                            <img src="img/phone.png" alt="phone">
+                        </div>
+                        <a href="tel:+9 789 698 46 78" class="phone__link">
+                            +9 789 698 46 78
+                        </a>
+                    </div>
+                    <div class="call-btn">
+                        <a href="javascript:void(0)" class="call-btn__link">
+                            Request a call
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy footer__copy">
+                <div class="copy__icon">
+                    <img src="img/f-lock.png" alt="lock">
+                </div>
+                <div class="copy__text">
+                    All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="display: none;">
+        <div class="modal" id="Modal">
+            <div class="modal-close box-modal_close arcticmodal-close">
+                <img src="img/modal-close.png" alt="close">
+            </div>
+            <form action="#" class="form">
+                <h3 class="form__title">
+                    Fill the form
+                </h3>
+                <div class="form__text">
+                    To get a free consultation<br> for your questions
+                </div>
+                <input type="text" name="name" class="form__input" placeholder="Enter your name">
+                <input type="text" name="Email" class="form__input" placeholder="Enter Email">
+                <input type="text" name="phone" class="form__input" placeholder="Enter phone">
+                <button type="submit" class="form__submit form__submit--modal">Send request</button>
+                <div class="form__protected">
+                    <div class="form__icon">
+                        <img src="img/form-lock.png" alt="lock">
+                    </div>
+                    <div class="form__data">
+                        Your data is protected
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
     <script src="js/main.js"></script>    
 </body>
 </html>

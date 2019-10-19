@@ -62,16 +62,16 @@
                 <nav class="nav navigation__nav">
                     <ul class="menu navigation__menu">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">home</a>
+                            <a href="index.html" class="menu__link">home</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">About company</a>
+                            <a href="about.html" class="menu__link">About company</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Services</a>
+                            <a href="services.html" class="menu__link">Services</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Contacts</a>
+                            <a href="contacts.html" class="menu__link">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -185,6 +185,8 @@
                         <div class="aboutContent__text">     
                             Recently, very unscrupulous one-day companies have begun to appear that have begun to defile our brand using similar names.
                         </div>
+                    </div>
+                    <div class="aboutContent__btn">
                         <a href="#" class="aboutContent__link">
                             <div class="aboutContent__more">
                                 Read more
@@ -412,16 +414,16 @@
                 <nav class="nav footer__nav">
                     <ul class="menu footer__menu">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">home</a>
+                            <a href="index.html" class="menu__link">home</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">About company</a>
+                            <a href="about.html" class="menu__link">About company</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Services</a>
+                            <a href="services.html" class="menu__link">Services</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Contacts</a>
+                            <a href="contacts.html" class="menu__link">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -451,7 +453,35 @@
             </div>
         </div>
     </footer>
+    <div style="display: none;">
+        <div class="modal" id="Modal">
+            <div class="modal-close box-modal_close arcticmodal-close">
+                <img src="img/modal-close.png" alt="close">
+            </div>
+            <form action="#" class="form">
+                <h3 class="form__title">
+                    Fill the form
+                </h3>
+                <div class="form__text">
+                    To get a free consultation<br> for your questions
+                </div>
+                <input type="text" name="name" class="form__input" placeholder="Enter your name">
+                <input type="text" name="Email" class="form__input" placeholder="Enter Email">
+                <input type="text" name="phone" class="form__input" placeholder="Enter phone">
+                <button type="submit" class="form__submit form__submit--modal">Send request</button>
+                <div class="form__protected">
+                    <div class="form__icon">
+                        <img src="img/form-lock.png" alt="lock">
+                    </div>
+                    <div class="form__data">
+                        Your data is protected
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
     <script src="js/main.js"></script>    
 </body>
 </html>
