@@ -1,0 +1,76 @@
+.aboutCompany {
+   padding-top: 130px;
+
+   &__content {
+        &:extend(.sg-row);
+   }
+
+   &__title {
+        &:extend(.title-2);
+
+        &--help {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        margin-bottom: 42px;
+    }
+
+    &__left,
+    &__right {
+        &:extend(.sg-col);
+        .size(6);
+    }
+
+    &__right {
+        padding-left: 60px;
+    }
+
+    &__text {
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: flex;
+    }
+
+    &__more {
+        color: @b;
+        margin-right: 12px;
+        &:extend(.link-hover);
+
+        &:after {
+            &:extend(.link-hover-after);
+            width: 100%;
+            border-bottom: 1px solid @b;
+        }
+
+        &:hover::after {
+            &:extend(.link-hover-width);
+            width: 0;
+        }        
+    }
+}
+
+.help {
+    &__item {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 25px;
+        line-height: 24px;
+
+        &:before {
+            width: 9px;
+            height: 9px;
+            display: block;
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 0;
+            background: #000;
+        }
+    }
+}
