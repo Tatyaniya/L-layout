@@ -25,6 +25,7 @@
 .servicesItem {
     &:extend(.sg-col);
     .size(4);
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -41,7 +42,7 @@
 
         &:after {
             &:extend(.link-hover-after);
-            left: -30px;
+            left: -35px;
             border-bottom: 2px solid rgb(221, 221, 221);
         }
 
@@ -51,7 +52,7 @@
 
         &:hover::after,
         &:hover::before {
-            width: calc(100% + 30px);
+            width: calc(100% + 35px);
             -webkit-transition: width 0.6s;
             transition: width 0.6s;
         }
