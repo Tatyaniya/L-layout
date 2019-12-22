@@ -1,6 +1,11 @@
 .header {
-    background: url('../img/first-bg.jpg') no-repeat center center;
+    background: url('../img/first_bg.jpg') no-repeat fixed center top;
     background-size: cover;
+    height: 100vh;
+
+    &__container {
+        height: 100%;
+    }
 }
 
 .navigation {
@@ -11,7 +16,7 @@
 }
 
 .menu {
-    width: 427px;
+    width: 330px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 3px;
@@ -85,8 +90,13 @@
 }
 
 .offer {
-    padding-top: 295px;
-    padding-bottom: 317px;
+    display: flex;
+    align-items: center;
+    height: calc(100% - 63px);
+
+    &__content {
+        width: 100%;
+    }
 
     &__title {
         color: @w;

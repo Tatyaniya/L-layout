@@ -13,6 +13,11 @@
         &:extend(.sg-col);
         .size(7);
         padding-right: 22px;
+
+        .bmd-block({
+            width: 724px;
+            margin: 0 auto;
+        });
     }
 
     &__form {
@@ -66,8 +71,8 @@
     }
 
     &__img {
-        width: 650px;
-        height: 370px;
+        max-width: 650px;
+        height: auto;
         box-shadow: 0 0 29px rgba(0, 0, 0, 0.13);
         & img {
             display: block;
@@ -80,9 +85,17 @@
             overflow: hidden;
             margin-top: 20px;
         }
+
+        .bmd-block({
+            width: 100%;
+        });
     }
 
     &__form {
-        box-shadow: 0px 0px 18px 0px rgba(0, 1, 1, 0.14);   
+        box-shadow: 0px 0px 18px 0px rgba(0, 1, 1, 0.14);
+
+        .bmd-block({
+            display: none;
+        });
     }
 }

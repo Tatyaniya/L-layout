@@ -6,20 +6,24 @@ module.exports = {
 		fields: "15px"
 	},
 	breakPoints: {
+        bmd: {
+			width: "1200px",
+			fields: "20px"
+		},
 		md: {
 			width: "992px",
 			fields: "20px"
 		},
-	   sm: {
-          width: "764px",
-          fields: "15px"
-	   },
-	   xs: {
-	      width: "576px"
-	   },
-	   xxs: {
-	      width: "400px"
-	   }
+        sm: {
+            width: "764px",
+            fields: "15px"
+        },
+        xs: {
+            width: "576px"
+        },
+        xxs: {
+            width: "400px"
+        }
 	},
 	mobileFirst: false
 };
