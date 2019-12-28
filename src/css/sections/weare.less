@@ -2,12 +2,17 @@
     padding-top: 85px;
     padding-bottom: 65px;
 
+    .bmd-block({
+        padding-top: 60px;
+    });
+
     &__title {
         &:extend(.title-2);
     }
 
     &__list {
         &:extend(.sg-row);
+        justify-content: center;
     }
 
     &__item {
@@ -15,6 +20,11 @@
         .size(2.4);
         padding-top: 11px;
         padding-left: 9px;
+
+        .bmd-block({
+            .size(4);
+            margin-bottom: 30px;
+        });
     }
 
     &__num {

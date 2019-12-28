@@ -1,18 +1,23 @@
 .services {
     padding-top: 135px;
 
+    .bmd-block({
+        padding-top: 70px;
+    });
+
     &__title {
         &:extend(.title-2);
     }
 }
-  
-  /*width: 310px;
-    height: 3px;*/
 
 .servicesItems {
     &:extend(.sg-row);
     position: relative;
     padding-bottom: 95px;
+
+    .bmd-block({
+        padding-bottom: 60px;
+    });
 
     &:after {
         &:extend(.section-after);
@@ -32,10 +37,18 @@
 
     &--pl-smoll {
         padding-left: 35px;
+
+        .bmd-block({
+            padding-left: 0;
+        });
     }
 
     &--pl-big {
         padding-left: 120px;
+
+        .bmd-block({
+            padding-left: 0;
+        });
     }
     
     &__link {
@@ -45,6 +58,10 @@
         text-transform: uppercase;
         padding-top: 10px;
         padding-bottom: 10px;
+
+        .bmd-block({
+            font-size: 12px;
+        });
         
         &:extend(.link-hover);
 
@@ -70,9 +87,10 @@
         width: 25px;
         height: 28px;
         margin-right: 9px;
-    }
 
-    .bmd-block {
-        
+        .bmd-block({
+            width: 14px;
+            height: 18px;
+        });
     }
 }

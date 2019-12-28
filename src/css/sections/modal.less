@@ -3,6 +3,11 @@
     background: #fff;
     position: relative;
 
+    .bmd-block({
+        width: 270px;
+        border-radius: 3px;
+    });
+
     &-close {
         width: 14px;
         height: 14px;
@@ -10,5 +15,42 @@
         top: 20px;
         right: 20px;
         cursor: pointer;
+    }
+}
+
+.modal .form {
+
+    .bmd-block({
+        padding: 40px 30px 30px;
+    });
+
+    &__title {
+        .bmd-block({
+            font-size: 14px;
+            margin-bottom: 9px;
+        });
+    }
+    &__text {
+        .bmd-block({
+            font-size: 11px;
+            margin-bottom: 15px;
+        });
+    }
+
+    &__input {
+        .bmd-block({
+            padding-left: 18px;
+            font-size: 10px;
+            height: 42px;
+        });
+    }
+    
+    &__submit {
+        .bmd-block({
+            font-size: 11px;
+            line-height: 34px;
+            height: 38px;
+            margin-bottom: 20px;
+        });
     }
 }

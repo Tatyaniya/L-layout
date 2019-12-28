@@ -7,16 +7,13 @@ module.exports = {
 	},
 	breakPoints: {
         bmd: {
-			width: "1200px",
-			fields: "20px"
+			width: "1200px"
 		},
 		md: {
-			width: "992px",
-			fields: "20px"
+			width: "992px"
 		},
         sm: {
-            width: "764px",
-            fields: "15px"
+            width: "764px"
         },
         xs: {
             width: "576px"

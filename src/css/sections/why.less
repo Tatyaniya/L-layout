@@ -1,6 +1,10 @@
 .why {
     padding-top: 90px;
 
+    .bmd-block({
+        padding-top: 90px;
+    });
+
     &__title {
         &:extend(.title-2);
     }
@@ -11,20 +15,38 @@
         padding-bottom: 100px;
         margin-bottom: 40px;
 
+        .bmd-block({
+            padding-bottom: 75px;
+            margin-bottom: 15px;
+        });
+
         &:before,
         &:after {
             &:extend(.section-after);
             width: 420px;
             height: 3px;
+
+            .bmd-block({
+                width: 190px;
+                height: 3px;
+            });
         }
 
         &:before {
             left: 512px;
+
+            .bmd-block({
+                left: 31.4%;
+            });
         }
 
         &:after {
             left: 300px;
-            bottom: -37px;
+            bottom: -15px;
+
+            .bmd-block({
+                left: 43.7%;
+            });
         }
     }
       
@@ -33,18 +55,51 @@
         display: flex;
         align-items: center;
 
-        &:first-child,
-        &:last-child {
+        &:first-child {
             .size(3);
+
+            .bmd-block({
+                .size(3);
+            });
         }
         &:nth-child(2) {
-            .size(6);
+            .size(5);
             justify-content: center;
+
+            .bmd-block({
+                .size(6);
+            });
+        }
+        &:last-child {
+            .size(3);
+
+            .bmd-block({
+                .size(3);
+            });
         }
     }
 
     &__icon {
-        margin-right: 12px;   
+        width: 35px;
+        height: 35px;
+        margin-right: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .bmd-block({
+            width: 20px;
+            height: 20px;
+        });
+
+        &--last {
+            width: 50px;
+
+            .bmd-block({
+                width: 24px;
+                height: 20px;
+            });
+        }
     }
 
     &__text {
@@ -52,5 +107,9 @@
         font-weight: 700;
         letter-spacing: -0.4px;
         text-transform: uppercase;
+
+        .bmd-block({
+            font-size: 12px;
+        });
     }
 }
