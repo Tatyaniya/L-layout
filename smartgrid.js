@@ -13,13 +13,13 @@ module.exports = {
 			width: "992px"
 		},
         sm: {
-            width: "764px"
+            width: "768px"
         },
         xs: {
             width: "576px"
         },
         xxs: {
-            width: "400px"
+            width: "480px"
         }
 	},
 	mobileFirst: false
