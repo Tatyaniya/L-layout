@@ -6,6 +6,10 @@
         padding-top: 60px;
     });
 
+    .sm-block({
+        padding-bottom: 40px;
+    });
+
     &__title {
         &:extend(.title-2);
     }
@@ -13,6 +17,10 @@
     &__list {
         &:extend(.sg-row);
         justify-content: center;
+
+        .sm-block({
+            justify-content: flex-start;
+        });
     }
 
     &__item {
@@ -64,6 +72,10 @@
         font-size: 9px;
         font-weight: 500;
         text-align: right;
+
+        .xxs-block({
+            width: 100%;
+        });
     }
 }
 

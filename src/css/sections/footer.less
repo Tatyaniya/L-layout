@@ -3,11 +3,28 @@
     padding-bottom: 33px;
     background-color: @b;
 
+    .bmd-block({
+        padding-top: 40px;
+        padding-bottom: 25px;
+    });
+
+    .sm-block({
+        padding-top: 35px;
+    });
+
     &__row {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 80px;
+
+        .bmd-block({
+            margin-bottom: 45px;
+        });
+
+        .bmd-block({
+            margin-bottom: 35px;
+        });
     }
 
     &__nav {
@@ -22,8 +39,6 @@
         font-weight: 500;
         color: rgba(255, 255, 255, 0.38);
     }
-
-    
 }
 
 .copy__icon {
