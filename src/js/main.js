@@ -4,6 +4,15 @@ $( function() {
         $('#Modal').arcticmodal();
     });
 
+    $('#humburger-header').click(function(){
+        console.log('1');
+        $( ".navigation__nav" ).toggleClass("navigation__nav-open");
+    });
+
+    $('#humburger-footer').click(function(){
+        $( ".footer__nav" ).toggleClass("footer__nav-open");
+    });
+
     if ($(window).width() > 960)
     { 
 		// Кешируем объект окна
@@ -28,5 +37,7 @@ $( function() {
 
 		 });	
     }
+
+    
     
 });

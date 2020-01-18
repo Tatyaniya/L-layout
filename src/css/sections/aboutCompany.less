@@ -18,6 +18,16 @@
         margin-bottom: 42px;
     }
 
+    &__middle {
+        &:extend(.sg-col);
+        display: none;
+
+        .md-block({
+            .size(6);
+            display: block;
+        });
+    }
+
     &__left,
     &__right {
         &:extend(.sg-col);
@@ -26,6 +36,10 @@
 
     &__right {
         padding-left: 60px;
+
+        .md-block({
+            .size(12);
+        });
     }
 
     &__text {
