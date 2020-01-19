@@ -1,6 +1,14 @@
 .meet {
     padding-top: 140px;
 
+    .md-block({
+        padding-top: 66px;
+    });
+
+    .sm-block({
+        padding-top: 37px;
+    });
+
     &__title {
         &:extend(.title-2);
     }
@@ -14,16 +22,39 @@
         .size(6);
         display: flex;
         margin-bottom: 48px;
+
+        .md-block({
+            .size(12);
+            margin-bottom: 40px;      
+        });
+
+        .sm-block({
+            margin-bottom: 30px;
+        });
+
+        .xxs-block({
+            flex-direction: column;
+        });
     }
 
     &__photo {
-        min-width: 205px;
+        width: 205px;
         height: 205px;
         margin-right: 12px;
         box-shadow: 0 0 29px rgba(0, 0, 0, 0.13);
 
+        .sm-block({
+            width: 180px;
+            height: 180px;
+        });
+
+        .xxs-block({
+            margin-bottom: 12px;
+        });
+
         & img {
             width: 100%;
+            height: auto;
         }
     }
 
@@ -34,6 +65,12 @@
         padding-top: 12px;
         margin-bottom: 27px;
 
+        .sm-block({
+            font-size: 12px;
+            padding-top: 6px;
+            margin-bottom: 18px;
+        });
+
         & span {
             display: inline-block;
             width: 100%;
@@ -42,6 +79,10 @@
 
     &__desc {
         margin-bottom: 25px;
+
+        .sm-block({
+            margin-bottom: 18px;
+        });
     }
 
     &__row {

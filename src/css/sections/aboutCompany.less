@@ -1,29 +1,58 @@
 .aboutCompany {
    padding-top: 130px;
 
-   &__content {
-        &:extend(.sg-row);
-   }
+   .md-block({
+        padding-top: 65px;
+    });
 
-   &__title {
+    &__content {
+            &:extend(.sg-row);
+    }
+
+    &__title {
         &:extend(.title-2);
+        margin-bottom: 20px;
 
-        &--help {
-            margin-bottom: 20px;
+        .md-block({
+            margin-bottom: 14px;
+        });
+
+        .sm-block({
+            margin-bottom: 14px;
+        });
+    }
+
+    &__img {
+        display: none;
+        margin-bottom: 27px;
+        box-shadow: 0 0 9px rgba(0, 0, 0, 0.13);
+
+        & img {
+            display: block;
+            width: 100%;
         }
+
+        .sm-block({
+            display: block;
+        });
     }
 
     &__subtitle {
         font-size: 14px;
         margin-bottom: 42px;
+
+        .md-block({
+            margin-bottom: 30px;
+        });
     }
 
     &__middle {
         &:extend(.sg-col);
         display: none;
+        padding-top: 0;
 
         .md-block({
-            .size(6);
+            .size(5.5);
             display: block;
         });
     }
@@ -34,17 +63,36 @@
         .size(6);
     }
 
+    &__left {
+        .md-block({
+            .size(6.5);
+        });
+
+        .sm-block({
+            .size(12);
+            margin-bottom: 60px;
+        });
+    }
+
     &__right {
         padding-left: 60px;
 
         .md-block({
             .size(12);
+            padding-left: 0;
         });
     }
 
     &__text {
         line-height: 28px;
         margin-bottom: 30px;
+
+        .md-block({
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 20px;
+        });
+
     }
 
     &__link {
@@ -55,6 +103,10 @@
         color: @b;
         margin-right: 12px;
         &:extend(.link-hover);
+
+        .md-block({
+            font-size: 14px;
+        });
 
         &:after {
             &:extend(.link-hover-after);
@@ -75,6 +127,15 @@
         padding-left: 25px;
         margin-bottom: 25px;
         line-height: 24px;
+
+        .md-block({
+            font-size: 14px;
+            margin-bottom: 18px;
+        });
+
+        .sm-block({
+            font-size: 12px;
+        });
 
         &:before {
             width: 9px;

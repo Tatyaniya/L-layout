@@ -15,6 +15,15 @@
             padding-bottom: 80px;
         });
 
+        .sm-block({
+            padding-top: 60px;
+            padding-bottom: 60px;
+        });
+
+        .xxs-block({
+            flex-direction: column;
+        });
+
         &--service {
             padding-top: 145px;
             padding-bottom: 221px;
@@ -25,6 +34,15 @@
         &:extend(.sg-col);
         .size(7);
 
+        .sm-block({
+            .size(5.9);
+        });
+
+        .xxs-block({
+            .size(12);
+            margin-bottom: 30px;
+        });
+
         &--service {
             .size(5);
         }
@@ -33,6 +51,14 @@
     &__right {
         &:extend(.sg-col);
         .size(5);
+
+        .sm-block({
+            .size(6.1);
+        });
+
+        .xxs-block({
+            .size(12);
+        });
 
         &--service {
             .size(7);
@@ -52,6 +78,12 @@
             font-size: 18px;
             padding-top: 13px;
             padding-bottom: 12px;
+        });
+
+        .sm-block({
+            font-size: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         });
 
         &:after,
@@ -85,6 +117,11 @@
             font-size: 14px;
             margin-bottom: 21px;
         });
+
+        .sm-block({
+            font-size: 12px;
+            margin-bottom: 17px;
+        });
     }
 
     &__item {
@@ -107,12 +144,23 @@
         margin-right: 12px;
         display: flex;
         align-items: center;
+        justify-content: center;
 
         .md-block({
             width: 23px;
             height: 23px;
             margin-right: 7px;
         });
+
+        .sm-block({
+            width: 14px;
+            height: 14px;
+        });
+
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
 
     &__text {
@@ -123,6 +171,21 @@
         .md-block({
             font-size: 11px;
         });
+
+        .sm-block({
+            font-size: 9px;
+        });
+
+        &--phone {
+
+            .md-block({
+                font-size: 12px;
+            });
+
+            .sm-block({
+                font-size: 10px;
+            });
+        }
 
         &--link {
             color: #fff;
@@ -138,6 +201,10 @@
         margin-bottom: 20px;
     });
 
+    .sm-block({
+        margin-bottom: 9px; 
+    });
+
     &__item {
         display: flex;
         align-items: center;
@@ -149,6 +216,10 @@
         font-weight: 500;
         text-transform: uppercase;
         margin-right: 9px;
+
+        .sm-block({
+            font-size: 9px;    
+        });
 
         &--active {
             color: #797777;
