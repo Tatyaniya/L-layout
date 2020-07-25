@@ -2,6 +2,16 @@
     &:extend(.sg-row);
     padding-left: 55px;
     padding-top: 50px;
+
+    .bmd-block({
+        padding-left: 30px;
+    });
+    .md-block({
+        padding-left: 15px;
+    });
+    .xs-block({
+        padding-top: 26px;
+    });
 }
 
 .serviceItem {
@@ -11,6 +21,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 23px;
+
+    .bmd-block({
+        .size(6);
+    });
+
+    .xs-block({
+        .size(12);
+    });
 
     &__icon {
         width: 17px;
@@ -22,12 +40,16 @@
     }
 
     &__link {
-        font-size: 10px;
+        font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
         color: #fff;
         padding-top: 10px;
         padding-bottom: 10px;
+
+        .sm-block({
+            font-size: 12px;
+        });
 
         &:extend(.link-hover);
 
@@ -52,6 +74,10 @@
 
 .aboutService {
     padding-top: 130px;
+
+    .md-block({
+        padding-top: 65px;
+    });
  
     &__content {
          &:extend(.sg-row);
@@ -74,10 +100,18 @@
     &__right {
         &:extend(.sg-col);
         .size(6);
+
+        .sm-block({
+            .size(12);
+        });
     }
 
     &__right {
         padding-left: 60px;
+
+        .md-block({
+            padding-left: 12px;
+        });
     }
 
     &__text {
