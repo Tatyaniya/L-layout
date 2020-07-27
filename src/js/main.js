@@ -1,11 +1,10 @@
 $( function() {
 
-    $('.call-btn,.offer__btn').click( function () {
+    $('.call-btn,.offer__btn, .form__submit').click( function () {
         $('#Modal').arcticmodal();
     });
 
     $('#humburger-header').click(function(){
-        console.log('1');
         $( ".navigation__nav" ).toggleClass("navigation__nav-open");
     });
 
@@ -37,6 +36,37 @@ $( function() {
 
 		 });	
     }
+
+    $(window).scroll(function() {
+        $('.aboutImages, .consultation__form--index, .consultation__form--about, .consultation__form--service').each(function(){
+            let imagePos = $(this).offset().top;
+
+            let topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+500) {
+                console.log('1');
+                $(this).addClass('animate__fadeInRight');
+            }
+        });
+        $('.aboutContent, .consultation__title, .consultation__contacts--index, .consultation__contacts--about, .consultation__contacts--service').each(function(){
+            let imagePos = $(this).offset().top;
+
+            let topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+500) {
+                console.log('2');
+                $(this).addClass('animate__fadeInLeft');
+            }
+        });
+
+          $('.services__container, .why__container, .weare__container, .meet__container, .benefits__container').each(function(){
+            let imagePos = $(this).offset().top;
+
+            let topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+500) {
+                console.log($(this));
+                $(this).addClass('animate__fadeInUp');
+            }
+        });
+    });
 
     
     
