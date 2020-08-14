@@ -37,13 +37,13 @@ $( function() {
 		 });	
     }
 
+    // animation
     $(window).scroll(function() {
         $('.aboutImages, .consultation__form--index, .consultation__form--about, .consultation__form--service').each(function(){
             let imagePos = $(this).offset().top;
 
             let topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+500) {
-                console.log('1');
                 $(this).addClass('animate__fadeInRight');
             }
         });
@@ -52,7 +52,6 @@ $( function() {
 
             let topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+500) {
-                console.log('2');
                 $(this).addClass('animate__fadeInLeft');
             }
         });
@@ -62,12 +61,29 @@ $( function() {
 
             let topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+500) {
-                console.log($(this));
                 $(this).addClass('animate__fadeInUp');
             }
         });
     });
 
     
-    
+    // click on the button "Read more" on the page "Home"
+    $('.aboutContent__link').click(function(){
+        $( ".aboutContent__desc" ).toggleClass("full-height");
+        if($(".aboutContent__desc").hasClass("full-height")) {
+            $(".aboutContent__more").text('Hide');
+        } else {
+            $(".aboutContent__more").text('Read more');
+        }
+    });
+
+    // click on the button "Read more" on the page "About company"
+    $('.aboutCompany__link').click(function(){
+        $( ".aboutCompany__desc" ).toggleClass("full-height");
+        if($(".aboutCompany__desc").hasClass("full-height")) {
+            $(".aboutCompany__more").text('Hide');
+        } else {
+            $(".aboutCompany__more").text('Read more');
+        }
+    });    
 });
